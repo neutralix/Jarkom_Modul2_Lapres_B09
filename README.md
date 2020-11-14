@@ -1,20 +1,20 @@
 # Jarkom_Modul2_Lapres_B09
 ## Soal 1 - 7
 #### UML MALANG
-/etc/bind/named.conf.local
+/etc/bind/named.conf.local  
 ![gambar](Screenshot/malang.named.png)
 
-/etc/bind/jarkom/semerub09.pw
+/etc/bind/jarkom/semerub09.pw  
 ![gambar](Screenshot/malang.semerub09.png)
 
-/etc/bind/jarkom/83.151.10.in-addr.arpa
+/etc/bind/jarkom/83.151.10.in-addr.arpa  
 ![gambar](Screenshot/malang.inaddr.png)
 
 #### UML MOJOKERTO
-/etc/bind/named.conf.local
+/etc/bind/named.conf.local  
 ![gambar](Screenshot/mojokerto.named.png)
 
-/etc/bind/delegasi/gunung.semerub09.pw
+/etc/bind/delegasi/gunung.semerub09.pw  
 ![gambar](Screenshot/mojokerto.gunung.png)
 
 #### Soal 1
@@ -57,48 +57,48 @@ Penjelasan :
 
 ## Soal 8
 Domain http://semeruyyy.pw memiliki DocumentRoot pada /var/www/semeruyyy.pw  
-![gambar](Screenshot/gambar8.1.png)
+![gambar](Screenshot/gambar8.1.png)  
 Penjelasan :
 - Buat file `semerub09.pw.conf` pada directory sites-available
 - Mengisikan ServerName, ServerAlias, dan DocumentRoot sesuai permintaan
 
 ## Soal 9
 Rewrite semerub09.pw/index.php/home menjadi semerub09.pw/home  
-![gambar](Screenshot/gambar9.1.png)
+![gambar](Screenshot/gambar9.1.png)  
 Penjelasan :
 - Buat file `.htaccess` pada directory DocumentRoot semerub09.pw
 - Ganti rewrite rule agar mengganti tulisan `home` dengan `index.php/home`
 
 ## Soal 10
 Domain http://penanjakan.semeruyyy.pw memiliki DocumentRoot pada /var/www/penanjakan.semeruyyy.pw  
-![gambar](Screenshot/gambar10.1.png)
+![gambar](Screenshot/gambar10.1.png)  
 Penjelasan :
 - Buat file `penanjakan.semerub09.pw.conf` pada directory sites-available
 - Mengisikan ServerName, ServerAlias, dan DocumentRoot sesuai permintaan
 
 ## Soal 11
 Directory listing folder /public  
-![gambar](Screenshot/gambar11.1.png)
+![gambar](Screenshot/gambar11.1.png)  
 Penjelasan :
 - Tambahkan pengaturan directory untuk seluruh folder dalam /public menjadi `Options -Indexes`
 
 ## Soal 12
 Mengganti error default apache  
-![gambar](Screenshot/gambar12.1.png)
+![gambar](Screenshot/gambar12.1.png)  
 Penjelasan :
 - Buat file `.htaccess` pada directory DocumentRoot penanjakan.semerub09.pw
 - Arahkan ErrorDocument 404 ke `/errors/404.html`
 
 ## Soal 13
 Alias http://penanjakan.semeruyyy.pw/js  
-![gambar](Screenshot/gambar11.1.png)
+![gambar](Screenshot/gambar11.1.png)  
 Penjelasan :
 - Tambahkan alias `/js` untuk `/var/www/penanjakan.semerub09.pw/public/javascripts`
 
 ## Soal 14
 Domain http://naik.gunung.semeruyyy.pw memiliki DocumentRoot pada /var/www/naik.gunung.semeruyyy.pw diakses menggunakan port 8888  
-![gambar](Screenshot/gambar14.1.png)
-![gambar](Screenshot/gambar14.2.png)
+![gambar](Screenshot/gambar14.1.png)  
+![gambar](Screenshot/gambar14.2.png)  
 Penjelasan :
 - Buat file `penanjakan.semerub09.pw.conf` pada directory sites-available
 - Mengganti port virtual host menjadi 8888
@@ -106,7 +106,7 @@ Penjelasan :
 
 ## Soal 15
 Autentifikasi password web http://naik.gunung.semeruyyy.pw  
-![gambar](Screenshot/gambar15.1.png)
+![gambar](Screenshot/gambar15.1.png)  
 Penjelasan :
 - Buat file `.htaccess` pada directory DocumentRoot naik.gunung.semerub09.pw
 - Arahkan file autentifikasi ke .htpasswd
@@ -114,13 +114,13 @@ Penjelasan :
 
 ## Soal 16
 Ganti halaman default apache ke halaman semerub09.pw  
-![gambar](Screenshot/gambar16.1.png)
+![gambar](Screenshot/gambar16.1.png)  
 Penjelasan :
 - Tambahkan `Redirect permanent` yang mengarah ke web semerub09.pw
 
 ## Soal 17
 Request gambar yang memiliki substring "semeru" akan diarahkan menuju semeru.jpg  
-![gambar](Screenshot/gambar12.1.png)
+![gambar](Screenshot/gambar12.1.png)  
 Penjelasan :
 - Ganti rewrite rule agar mengganti tulisan mengantung substring "semeru" dengan `semeru.jpg`
 - Penulisan rewrite : `.*semeru.*\.jpg`
